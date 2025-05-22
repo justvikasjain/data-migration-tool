@@ -1,0 +1,93 @@
+/* Custom styles for DB Migration Tool */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* Custom card styling */
+.card {
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-header {
+  border-bottom: none;
+  padding: 15px 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Table list styling */
+.list-group-item {
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+.list-group-item:first-child {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.list-group-item.active {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Migration status indicators */
+.status-success {
+  color: #198754;
+}
+
+.status-error {
+  color: #dc3545;
+}
+
+.status-in-progress {
+  color: #0d6efd;
+}
+
+/* Animation for loading */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Make buttons more visible */
+.btn {
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .col-md-2 {
+    margin: 20px 0;
+    text-align: center;
+  }
+}
